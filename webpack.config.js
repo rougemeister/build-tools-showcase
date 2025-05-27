@@ -17,13 +17,21 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.scss$/i,          
+        use: [
+          'style-loader',          
+          'css-loader',           
+          'sass-loader',          
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html'
-    })
+      filename: 'index.html',
+    }),
   ],
   devServer: {
     static: {
@@ -32,6 +40,8 @@ module.exports = {
     compress: true,
     port: 9000,
     open: true,
+    hot: true,                  
   },
-  mode: 'development'
+  mode: 'development',
+  devtool: 'source-map',         
 };
