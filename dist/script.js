@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/script.ts":
-/*!***********************!*\
-  !*** ./src/script.ts ***!
-  \***********************/
+/***/ "./src/scripts/script.ts":
+/*!*******************************!*\
+  !*** ./src/scripts/script.ts ***!
+  \*******************************/
 /***/ (() => {
 
-eval("\nconst greet = (name) => {\n    return `Hello, ${name}!`;\n};\nconsole.log(greet(\"World\"));\n\n\n//# sourceURL=webpack://build-tools-showcase/./src/script.ts?");
+eval("\nconst greet = (name) => {\n    return `Hello, ${name}!`;\n};\nconsole.log(greet(\"World\"));\n\n\n//# sourceURL=webpack://build-tools-showcase/./src/scripts/script.ts?");
 
 /***/ })
 
@@ -27,7 +27,7 @@ eval("\nconst greet = (name) => {\n    return `Hello, ${name}!`;\n};\nconsole.lo
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/script.ts"]();
+/******/ 	__webpack_modules__["./src/scripts/script.ts"]();
 /******/ 	
 /******/ })()
 ;
