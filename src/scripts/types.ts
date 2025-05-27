@@ -1,3 +1,7 @@
+export interface BuildToolList {
+    buildTools: BuildTool[];
+  }
+
 export interface BuildTool {
     id: string;
     name: string;
