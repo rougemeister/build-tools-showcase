@@ -7,7 +7,11 @@
     "build": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "check": "npm run lint && npm run format",
+    "fix": "eslint . --ext .js,.ts --fix && prettier --write .",
+    "precommit": "npm run check",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +26,7 @@
     "eslint": "^9.27.0",
     "globals": "^16.2.0",
     "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "sass": "^1.89.0",
     "sass-loader": "^16.0.5",
