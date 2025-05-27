@@ -1,105 +1,104 @@
 {
-    "buildTools": [
-      {
-        "id": "webpack",
-        "name": "Webpack",
-        "description": "A static module bundler for modern JavaScript applications",
-        "category": "bundler",
-        "color": "#8DD6F9",
-        "logo": "https://webpack.js.org/site-logo.1fcab817090e78435061.svg",
-        "website": "https://webpack.js.org/",
-        "popularity": "high"
-      },
-      {
-        "id": "vite",
-        "name": "Vite",
-        "description": "Next generation frontend tooling. It's fast!",
-        "category": "bundler",
-        "color": "#646CFF",
-        "logo": "https://vitejs.dev/logo.svg",
-        "website": "https://vitejs.dev/",
-        "popularity": "high"
-      },
-      {
-        "id": "parcel",
-        "name": "Parcel",
-        "description": "Blazing fast, zero configuration web application bundler",
-        "category": "bundler",
-        "color": "#FFB833",
-        "logo": "https://parceljs.org/parcel-og.png",
-        "website": "https://parceljs.org/",
-        "popularity": "medium"
-      },
-      {
-        "id": "rollup",
-        "name": "Rollup",
-        "description": "A module bundler for JavaScript which compiles small pieces into larger ones",
-        "category": "bundler",
-        "color": "#EC4A3F",
-        "logo": "https://rollupjs.org/logo.svg",
-        "website": "https://rollupjs.org/",
-        "popularity": "medium"
-      },
-      {
-        "id": "gulp",
-        "name": "Gulp",
-        "description": "A toolkit for automating painful or time-consuming tasks in your development workflow",
-        "category": "task runner",
-        "color": "#CF4647",
-        "logo": "https://gulpjs.com/img/gulp-white-text.svg",
-        "website": "https://gulpjs.com/",
-        "popularity": "medium"
-      },
-      {
-        "id": "grunt",
-        "name": "Grunt",
-        "description": "The JavaScript task runner",
-        "category": "task runner",
-        "color": "#FBA919",
-        "logo": "https://gruntjs.com/img/grunt-logo-no-wordmark.svg",
-        "website": "https://gruntjs.com/",
-        "popularity": "low"
-      },
-      {
-        "id": "snowpack",
-        "name": "Snowpack",
-        "description": "A frontend build tool for the modern web",
-        "category": "bundler",
-        "color": "#2C4BFF",
-        "logo": "https://www.snowpack.dev/img/snowpack.svg",
-        "website": "https://www.snowpack.dev/",
-        "popularity": "low"
-      },
-      {
-        "id": "browserify",
-        "name": "Browserify",
-        "description": "Lets you require('modules') in the browser by bundling up all dependencies",
-        "category": "bundler",
-        "color": "#FF813F",
-        "logo": "https://raw.githubusercontent.com/browserify/browserify.org/master/img/webpack.svg",
-        "website": "http://browserify.org/",
-        "popularity": "low"
-      },
-      {
-        "id": "esbuild",
-        "name": "ESBuild",
-        "description": "An extremely fast JavaScript bundler and minifier",
-        "category": "bundler",
-        "color": "#FFCF00",
-        "logo": "https://esbuild.github.io/favicon.svg",
-        "website": "https://esbuild.github.io/",
-        "popularity": "medium"
-      },
-      {
-        "id": "turbopack",
-        "name": "Turbopack",
-        "description": "Successor to Webpack, by Vercel — incremental bundler optimized for JavaScript and TypeScript",
-        "category": "bundler",
-        "color": "#000000",
-        "logo": "https://turbo.build/images/docs/turbopack.png",
-        "website": "https://turbo.build/pack",
-        "popularity": "growing"
-      }
-    ]
-  }
-  
+  "buildTools": [
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "description": "A static module bundler for modern JavaScript applications",
+      "category": "bundler",
+      "color": "#8DD6F9",
+      "logo": "https://webpack.js.org/site-logo.1fcab817090e78435061.svg",
+      "website": "https://webpack.js.org/",
+      "popularity": "high"
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "description": "Next generation frontend tooling. It's fast!",
+      "category": "bundler",
+      "color": "#646CFF",
+      "logo": "https://vitejs.dev/logo.svg",
+      "website": "https://vitejs.dev/",
+      "popularity": "high"
+    },
+    {
+      "id": "parcel",
+      "name": "Parcel",
+      "description": "Blazing fast, zero configuration web application bundler",
+      "category": "bundler",
+      "color": "#FFB833",
+      "logo": "https://parceljs.org/parcel-og.png",
+      "website": "https://parceljs.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "rollup",
+      "name": "Rollup",
+      "description": "A module bundler for JavaScript which compiles small pieces into larger ones",
+      "category": "bundler",
+      "color": "#EC4A3F",
+      "logo": "https://rollupjs.org/logo.svg",
+      "website": "https://rollupjs.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "gulp",
+      "name": "Gulp",
+      "description": "A toolkit for automating painful or time-consuming tasks in your development workflow",
+      "category": "task runner",
+      "color": "#CF4647",
+      "logo": "https://gulpjs.com/img/gulp-white-text.svg",
+      "website": "https://gulpjs.com/",
+      "popularity": "medium"
+    },
+    {
+      "id": "grunt",
+      "name": "Grunt",
+      "description": "The JavaScript task runner",
+      "category": "task runner",
+      "color": "#FBA919",
+      "logo": "https://gruntjs.com/img/grunt-logo-no-wordmark.svg",
+      "website": "https://gruntjs.com/",
+      "popularity": "low"
+    },
+    {
+      "id": "snowpack",
+      "name": "Snowpack",
+      "description": "A frontend build tool for the modern web",
+      "category": "bundler",
+      "color": "#2C4BFF",
+      "logo": "https://www.snowpack.dev/img/snowpack.svg",
+      "website": "https://www.snowpack.dev/",
+      "popularity": "low"
+    },
+    {
+      "id": "browserify",
+      "name": "Browserify",
+      "description": "Lets you require('modules') in the browser by bundling up all dependencies",
+      "category": "bundler",
+      "color": "#FF813F",
+      "logo": "https://raw.githubusercontent.com/browserify/browserify.org/master/img/webpack.svg",
+      "website": "http://browserify.org/",
+      "popularity": "low"
+    },
+    {
+      "id": "esbuild",
+      "name": "ESBuild",
+      "description": "An extremely fast JavaScript bundler and minifier",
+      "category": "bundler",
+      "color": "#FFCF00",
+      "logo": "https://esbuild.github.io/favicon.svg",
+      "website": "https://esbuild.github.io/",
+      "popularity": "medium"
+    },
+    {
+      "id": "turbopack",
+      "name": "Turbopack",
+      "description": "Successor to Webpack, by Vercel — incremental bundler optimized for JavaScript and TypeScript",
+      "category": "bundler",
+      "color": "#000000",
+      "logo": "https://turbo.build/images/docs/turbopack.png",
+      "website": "https://turbo.build/pack",
+      "popularity": "growing"
+    }
+  ]
+}

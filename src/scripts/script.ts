@@ -1,1 +1,3 @@
-import '../styles.scss'
+import '../styles.scss';
+
+console.log('Hello, World!');
