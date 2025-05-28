@@ -7,11 +7,15 @@
 .dark-mode {
   background-color: $neutral-800;
   color: $neutral-50;
+  header {
+    background-color: $neutral-900;
+  }
 
 }
 body {
   background-color: $background;
   font-family: $font-family;
+
 }
 
 header {
