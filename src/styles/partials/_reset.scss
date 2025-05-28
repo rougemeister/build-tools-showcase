@@ -1,0 +1,51 @@
+
+@use './mixins' as *;
+
+/* Set root font-size to establish rem baseline */
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  /* Remove default list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove link underline */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Images and media */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Form elements */
+  input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  /* Button reset */
+  button {
+    cursor: pointer;
+    padding: 1rem 2rem; // 10px 20px
+    border-radius: 0.4rem;
+  }

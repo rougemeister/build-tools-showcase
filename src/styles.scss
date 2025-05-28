@@ -1,5 +1,47 @@
 @use './styles/partials/variables' as *;
+@use './styles/partials/reset' as *;
+@use './styles/partials/fonts' as *;
 
+
+
+.dark-mode {
+  background-color: $neutral-800;
+  color: $neutral-50;
+
+}
 body {
+  background-color: $background;
+  font-family: $font-family;
+}
+
+header {
+  background-color: $neutral-50;
+  padding: 1rem;
+  h1{
+    font-size: 1.8rem;
+  }
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn {
   background-color: aqua;
+  padding: 1rem 2rem; // 10px 20px
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  .search-input {
+    flex-grow: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid $neutral-300;
+  }
+
 }

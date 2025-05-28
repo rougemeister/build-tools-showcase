@@ -1,10 +1,10 @@
-/******/ (() => {
-  // webpackBootstrap
-  /******/ 'use strict';
-  /*!*******************************!*\
-  !*** ./src/scripts/script.ts ***!
-  \*******************************/
+body {
+  background-color: green;
+  color: blue;
+}
 
-  /******/
-})();
-//# sourceMappingURL=script.js.map
+body {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=script.js.map */

@@ -1,0 +1,3 @@
+@mixin rem($property, $px-value) {
+    #{$property}: ($px-value / 10) * 1rem;
+  }
