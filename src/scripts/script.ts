@@ -48,39 +48,41 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
     ` : '';
     
     return `
-      <div class="${cardClassName}" 
+      <div class="${cardClassName} card" 
            data-id="${tool.id}" 
            data-category="${tool.category}" 
            data-popularity="${tool.popularity}"
            data-name="${tool.name.toLowerCase()}"
            data-description="${tool.description.toLowerCase()}">
-        <div class="tool-header" style="border-top: 4px solid ${tool.color};">
-          <div class="tool-logo">
-            <img src="${tool.logo}" 
-                 alt="${tool.name} logo" 
-                 loading="lazy"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="tool-header"">
+          <div class="tool-logo" style="background: url('${tool.logo}') no-repeat center center; background-size: contain; ">
             <div class="logo-fallback" style="display: none; width: 40px; height: 40px; background: ${tool.color}; border-radius: 4px; align-items: center; justify-content: center; color: white; font-weight: bold;">
               ${tool.name.charAt(0)}
             </div>
           </div>
-          <div class="tool-info">
-            <h3 class="tool-name">${tool.name}</h3>
+          
+        </div>
+        <div class="tool-body"  >
+        <div class="tool-info">
+            <h3 class="tool-name" style="color: ${tool.color}">${tool.name}</h3>
             <div class="tool-badges">
               ${categoryBadge}
               ${popularityBadge}
             </div>
           </div>
-        </div>
-        <div class="tool-body">
           <p class="tool-description">${tool.description}</p>
-          <a href="${tool.website}" 
+         
+            <a href="${tool.website}" 
              target="_blank" 
              rel="noopener noreferrer" 
              class="tool-link"
              aria-label="Visit ${tool.name} website">
+              <button class="visit-page-button">
             Visit Website →
+              </button>
           </a>
+        
+
         </div>
       </div>
     `;
@@ -130,9 +132,8 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
           <input type="text" 
                  id="${containerId}-search" 
                  class="search-input" 
-                 placeholder="Search build tools..."
+                 placeholder="Search build tools ..."
                  aria-label="Search build tools">
-          <span class="search-icon">🔍</span>
         </div>
         <div class="filters-container">
           <select id="${containerId}-category-filter" class="filter-select" aria-label="Filter by category">
@@ -148,8 +149,9 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
             <option value="popularity">Sort by Popularity</option>
             <option value="category">Sort by Category</option>
           </select>
-          <button id="${containerId}-clear" class="clear-button" aria-label="Clear all filters">Clear</button>
         </div>
+        <button id="${containerId}-clear" class="clear-button" aria-label="Clear all filters">Clear</button>
+
       </div>
     `;
   }
