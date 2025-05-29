@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/scripts/script.ts',
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/scripts'),
     clean: true,
   },
   resolve: {

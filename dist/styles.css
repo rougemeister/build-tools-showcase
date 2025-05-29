@@ -1,13 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+/* Set root font-size to establish rem baseline */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove link underline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images and media */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Button reset */
+button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+.dark-mode {
+  background-color: #181a1c;
+  color: #ffffff;
+}
+.dark-mode header {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+
 body {
   background-color: #f6f6f7;
   font-family: "Manrope", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 1.8rem;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-btn {
+  background-color: aqua;
+  padding: 1rem 2rem;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+}
+.search .search-input {
+  flex-grow: 1;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #e9ebed;
 }
 
 /*# sourceMappingURL=styles.css.map */

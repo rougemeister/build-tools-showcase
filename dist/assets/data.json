@@ -1,0 +1,254 @@
+{
+  "buildTools": [
+    {
+      "id": "snowpack",
+      "name": "Snowpack",
+      "description": "A frontend build tool for the modern web",
+      "category": "bundler",
+      "color": "#2C4BFF",
+      "logo": "https://www.snowpack.dev/img/snowpack.svg",
+      "website": "https://www.snowpack.dev/",
+      "popularity": "low"
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "description": "A static module bundler for modern JavaScript applications",
+      "category": "bundler",
+      "color": "#8DD6F9",
+      "logo": "https://webpack.js.org/assets/icon-square-big.svg",
+      "website": "https://webpack.js.org/",
+      "popularity": "high"
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "description": "Next generation frontend tooling",
+      "category": "bundler",
+      "color": "#646CFF",
+      "logo": "https://vitejs.dev/logo.svg",
+      "website": "https://vitejs.dev/",
+      "popularity": "high"
+    },
+    {
+      "id": "parcel",
+      "name": "Parcel",
+      "description": "The zero configuration build tool for the web",
+      "category": "bundler",
+      "color": "#E1A764",
+      "logo": "https://parceljs.org/assets/parcel.png",
+      "website": "https://parceljs.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "rollup",
+      "name": "Rollup",
+      "description": "Next-generation ES module bundler",
+      "category": "bundler",
+      "color": "#FF3333",
+      "logo": "https://rollupjs.org/logo.svg",
+      "website": "https://rollupjs.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "esbuild",
+      "name": "ESBuild",
+      "description": "An extremely fast JavaScript bundler and minifier",
+      "category": "bundler",
+      "color": "#FFCF00",
+      "logo": "https://esbuild.github.io/favicon.svg",
+      "website": "https://esbuild.github.io/",
+      "popularity": "high"
+    },
+    {
+      "id": "turbopack",
+      "name": "Turbopack",
+      "description": "The Rust-powered successor to Webpack",
+      "category": "bundler",
+      "color": "#000000",
+      "logo": "https://turbo.build/images/docs/pack/turbopack-hero-hexagons-dark.svg",
+      "website": "https://turbo.build/pack",
+      "popularity": "medium"
+    },
+    {
+      "id": "gulp",
+      "name": "Gulp",
+      "description": "A toolkit for automating painful development workflows",
+      "category": "task-runner",
+      "color": "#CF4647",
+      "logo": "https://gulpjs.com/img/gulp-white-text.svg",
+      "website": "https://gulpjs.com/",
+      "popularity": "medium"
+    },
+    {
+      "id": "grunt",
+      "name": "Grunt",
+      "description": "The JavaScript task runner",
+      "category": "task-runner",
+      "color": "#FAA918",
+      "logo": "https://gruntjs.com/img/grunt-logo.svg",
+      "website": "https://gruntjs.com/",
+      "popularity": "low"
+    },
+    {
+      "id": "npm-scripts",
+      "name": "npm scripts",
+      "description": "Build scripts defined in package.json",
+      "category": "task-runner",
+      "color": "#CB3837",
+      "logo": "https://static-production.npmjs.com/58a19602036db1daee0d7863c94673a4.png",
+      "website": "https://docs.npmjs.com/cli/v8/using-npm/scripts",
+      "popularity": "high"
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "description": "A formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS",
+      "category": "toolchain",
+      "color": "#FFC905",
+      "logo": "https://rome.tools/img/rome-logo.svg",
+      "website": "https://rome.tools/",
+      "popularity": "low"
+    },
+    {
+      "id": "swc",
+      "name": "SWC",
+      "description": "Rust-based platform for the Web",
+      "category": "compiler",
+      "color": "#FFC119",
+      "logo": "https://swc.rs/logo.png",
+      "website": "https://swc.rs/",
+      "popularity": "medium"
+    },
+    {
+      "id": "babel",
+      "name": "Babel",
+      "description": "A JavaScript compiler",
+      "category": "compiler",
+      "color": "#F9DC3E",
+      "logo": "https://babeljs.io/img/babel.png",
+      "website": "https://babeljs.io/",
+      "popularity": "high"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "description": "JavaScript with syntax for types",
+      "category": "compiler",
+      "color": "#3178C6",
+      "logo": "https://www.typescriptlang.org/favicon-32x32.png",
+      "website": "https://www.typescriptlang.org/",
+      "popularity": "high"
+    },
+    {
+      "id": "postcss",
+      "name": "PostCSS",
+      "description": "A tool for transforming CSS with JavaScript",
+      "category": "css-processor",
+      "color": "#DD3A0A",
+      "logo": "https://postcss.org/assets/logo-3e39b0aa.svg",
+      "website": "https://postcss.org/",
+      "popularity": "high"
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "description": "CSS with superpowers",
+      "category": "css-processor",
+      "color": "#CF649A",
+      "logo": "https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg",
+      "website": "https://sass-lang.com/",
+      "popularity": "high"
+    },
+    {
+      "id": "less",
+      "name": "Less",
+      "description": "It's CSS, with just a little more",
+      "category": "css-processor",
+      "color": "#1D365D",
+      "logo": "https://lesscss.org/public/img/less_logo.png",
+      "website": "https://lesscss.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "stylus",
+      "name": "Stylus",
+      "description": "Expressive, robust, feature-rich CSS language",
+      "category": "css-processor",
+      "color": "#333333",
+      "logo": "https://stylus-lang.com/img/stylus-logo.svg",
+      "website": "https://stylus-lang.com/",
+      "popularity": "low"
+    },
+    {
+      "id": "rspack",
+      "name": "Rspack",
+      "description": "A fast Rust-based web bundler",
+      "category": "bundler",
+      "color": "#FF6B35",
+      "logo": "https://www.rspack.dev/rspack-logo.svg",
+      "website": "https://www.rspack.dev/",
+      "popularity": "medium"
+    },
+    {
+      "id": "farm",
+      "name": "Farm",
+      "description": "Extremely fast Vite-compatible web build tool written in Rust",
+      "category": "bundler",
+      "color": "#00D4AA",
+      "logo": "https://farmfe.org/img/logo.png",
+      "website": "https://farmfe.org/",
+      "popularity": "low"
+    },
+    {
+      "id": "bun",
+      "name": "Bun",
+      "description": "Fast all-in-one JavaScript runtime",
+      "category": "runtime",
+      "color": "#FBF0DF",
+      "logo": "https://bun.sh/logo.svg",
+      "website": "https://bun.sh/",
+      "popularity": "medium"
+    },
+    {
+      "id": "deno",
+      "name": "Deno",
+      "description": "A modern runtime for JavaScript and TypeScript",
+      "category": "runtime",
+      "color": "#000000",
+      "logo": "https://deno.land/logo.svg",
+      "website": "https://deno.land/",
+      "popularity": "medium"
+    },
+    {
+      "id": "nx",
+      "name": "Nx",
+      "description": "Smart, fast and extensible build system",
+      "category": "monorepo",
+      "color": "#143055",
+      "logo": "https://nx.dev/favicon/favicon.svg",
+      "website": "https://nx.dev/",
+      "popularity": "medium"
+    },
+    {
+      "id": "lerna",
+      "name": "Lerna",
+      "description": "A tool for managing JavaScript projects with multiple packages",
+      "category": "monorepo",
+      "color": "#9333EA",
+      "logo": "https://lerna.js.org/images/lerna-hero.svg",
+      "website": "https://lerna.js.org/",
+      "popularity": "medium"
+    },
+    {
+      "id": "rush",
+      "name": "Rush",
+      "description": "A scalable monorepo manager for the web",
+      "category": "monorepo",
+      "color": "#087EA4",
+      "logo": "https://rushjs.io/images/rush-logo-for-light-bg.svg",
+      "website": "https://rushjs.io/",
+      "popularity": "low"
+    }
+  ]
+}
