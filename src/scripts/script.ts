@@ -1,6 +1,9 @@
 import '../styles.scss';
 
+
 import { BuildTool, BuildToolsData, RenderOptions, LoadOptions } from './types'
+import { DarkModeManager } from './utilFunctions';
+
 
 
 
@@ -281,7 +284,6 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
     // Add search and filters if enabled
     if (enableSearch || enableFilters) {
       html += createSearchAndFilters(data, containerId);
-      html += `<div id="${containerId}-count" class="results-count">${data.buildTools.length} tool${data.buildTools.length !== 1 ? 's' : ''} found</div>`;
     }
     
     // Add results container
@@ -427,3 +429,9 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
   });
   
   
+
+
+
+const darkMode = new DarkModeManager();
+const themeButton = document.querySelector('.theme-toggler button');
+themeButton?.addEventListener('click', () => darkMode.toggle());

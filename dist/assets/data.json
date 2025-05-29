@@ -205,7 +205,7 @@
       "name": "Deno",
       "description": "Deno is a modern, secure runtime for JavaScript and TypeScript with built-in TypeScript support, secure-by-default execution, and modern JavaScript APIs without requiring package.json or node_modules.",
       "category": "runtime",
-      "color": "#000000",
+      "color": "#808080",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Deno_2021.svg/1024px-Deno_2021.svg.png",
       "website": "https://deno.land/",
       "popularity": "medium"

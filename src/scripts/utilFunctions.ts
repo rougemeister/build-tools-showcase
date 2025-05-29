@@ -1,29 +1,54 @@
-export class ThemeToggler {
-    private static themeKey = 'preferred-theme';
+export class DarkModeManager {
+  private isDarkMode: boolean = false;
+  private sunIcon: HTMLElement | null = null;
+  private moonIcon: HTMLElement | null = null;
   
-    static initTheme(): void {
-      const savedTheme = localStorage.getItem(this.themeKey);
-      console.log(savedTheme)
+  constructor() {
+    this.sunIcon = document.querySelector('.sun');
+    this.moonIcon = document.querySelector('.moon');
+    this.initializeFromStorage();
+  }
   
-      if (savedTheme) {
-        this.setTheme(savedTheme);
-      } else {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        this.setTheme(prefersDark ? 'dark' : 'light');
-      }
-    }
+  private initializeFromStorage(): void {
+    const saved = localStorage.getItem('darkMode');
+    this.isDarkMode = saved === 'true';
+    this.applyMode();
+  }
   
-    static toggleTheme(): void {
-      const isDark = document.documentElement.classList.toggle('dark-mode');
-      localStorage.setItem(this.themeKey, isDark ? 'dark' : 'light');
-    }
-  
-    static setTheme(theme: string): void {
-      if (theme === 'dark') {
-        document.documentElement.classList.add('dark-mode');
-      } else {
-        document.documentElement.classList.remove('dark-mode');
-      }
+  private applyMode(): void {
+    if (this.isDarkMode) {
+      document.body.classList.add('darkmode');
+      this.showMoonIcon();
+    } else {
+      document.body.classList.remove('darkmode');
+      this.showSunIcon();
     }
   }
   
+  private showSunIcon(): void {
+    if (this.sunIcon) this.sunIcon.style.display = 'none';
+    if (this.moonIcon) this.moonIcon.style.display = 'block';
+  }
+  
+  private showMoonIcon(): void {
+    if (this.sunIcon) this.sunIcon.style.display = 'block';
+    if (this.moonIcon) this.moonIcon.style.display = 'none';
+  }
+  
+  toggle(): boolean {
+    this.isDarkMode = !this.isDarkMode;
+    this.applyMode();
+    localStorage.setItem('darkMode', this.isDarkMode.toString());
+    return this.isDarkMode;
+  }
+  
+  setDarkMode(enabled: boolean): void {
+    this.isDarkMode = enabled;
+    this.applyMode();
+    localStorage.setItem('darkMode', this.isDarkMode.toString());
+  }
+  
+  getCurrentMode(): boolean {
+    return this.isDarkMode;
+  }
+}
