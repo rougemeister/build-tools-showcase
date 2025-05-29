@@ -65,9 +65,8 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
         <div class="tool-body"  >
         <div class="tool-info">
             <h3 class="tool-name" style="color: ${tool.color}">${tool.name}</h3>
-            <div class="tool-badges">
+            <div class="tool-badges" style="background-color: ${tool.color}">
               ${categoryBadge}
-              ${popularityBadge}
             </div>
           </div>
           <p class="tool-description">${tool.description}</p>
