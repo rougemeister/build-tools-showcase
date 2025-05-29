@@ -429,7 +429,19 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
   });
   
   
-
+export {  
+  loadBuildToolsData,
+  renderBuildToolCard,
+  sortBuildTools,
+  groupByCategory,
+  createSearchAndFilters,
+  setupSearchAndFilters,
+  renderBuildTools,
+  renderBuildToolsToDOM,
+  filterBuildTools,
+  initializeBuildTools,
+  getBuildToolsStats
+}
 
 
 const darkMode = new DarkModeManager();
