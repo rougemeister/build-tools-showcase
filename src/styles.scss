@@ -41,9 +41,6 @@ body {
 
 }
 
-svg {
-  background-color: $secondary;
-}
 
 header {
   display: flex;
@@ -55,12 +52,17 @@ header {
   
 }
 
+
+
 .logo {
   display: flex;
   gap: 0.5rem;
 }
 
-
+h1 {
+  font-size: $font-size-xxl;
+  font-weight: $text-bold-weight;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -224,6 +226,15 @@ footer {
 @media screen and (min-width: 480px) {
   h1 {
     font-size: 5rem;
+  }
+
+  .logo {
+    align-items: center;
+    svg {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+    }
   }
   .card {
     width: 300px;
