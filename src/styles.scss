@@ -37,8 +37,8 @@
 body {
   background-color: $background;
   font-family: $font-family;
-
-
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -52,7 +52,9 @@ header {
   
 }
 
-
+footer {
+  justify-self:  flex-end;
+}
 
 .logo {
   display: flex;
@@ -88,7 +90,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 100vh;
 
 }
 
@@ -126,7 +128,11 @@ h1 {
   margin: 1rem 0;
 }
 
-
+.logo-image {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
 
 .tools-grid {
   display: flex;
@@ -167,9 +173,7 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
   border: 1px solid $primary-light;
 }
 
@@ -238,7 +242,7 @@ footer {
   }
   .card {
     width: 300px;
-    height: 550px;
+    height: 400px;
   }
   .tools-grid {
     flex-direction: row;

@@ -1,4 +1,5 @@
 import '../styles.scss';
+import _ from 'lodash';
 
 
 import { BuildTool, BuildToolsData, RenderOptions, LoadOptions } from './types'
@@ -57,8 +58,11 @@ async function loadBuildToolsData(jsonPath: string = '../assets/data.json'): Pro
            data-popularity="${tool.popularity}"
            data-name="${tool.name.toLowerCase()}"
            data-description="${tool.description.toLowerCase()}">
-        <div class="tool-header"">
-          <div class="tool-logo" style="background: url('${tool.logo}') no-repeat center center; background-size: contain; ">
+        <div class="tool-header">
+          <div class="tool-logo">
+            <img src="${tool.logo}"
+                 alt="${tool.name} logo"
+                 class="logo-image" />
             <div class="logo-fallback" style="display: none; width: 40px; height: 40px; background: ${tool.color}; border-radius: 4px; align-items: center; justify-content: center; color: white; font-weight: bold;">
               ${tool.name.charAt(0)}
             </div>
