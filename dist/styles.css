@@ -90,10 +90,6 @@ header {
   font-size: 1.5rem;
 }
 
-footer {
-  justify-self: flex-end;
-}
-
 .logo {
   display: flex;
   gap: 0.5rem;
@@ -125,7 +121,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 
 .build-tools-controls {
@@ -210,6 +205,12 @@ h1 {
   border: 1px solid #bef9c6;
 }
 
+.card:hover img {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  filter: brightness(0.9);
+}
+
 .tool-body {
   display: flex;
   flex-direction: column;
@@ -270,11 +271,12 @@ footer {
   }
   .card {
     width: 300px;
-    height: 400px;
+    height: 550px;
   }
   .tools-grid {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
   .filters-container {
@@ -285,6 +287,7 @@ footer {
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 10px;
   }
   .build-tools-controls button {
     width: 100px;
